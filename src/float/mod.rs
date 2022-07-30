@@ -7,6 +7,7 @@ pub mod cmp;
 pub mod conv;
 pub mod div;
 pub mod extend;
+pub mod f128;
 pub mod mul;
 pub mod pow;
 pub mod sub;
