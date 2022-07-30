@@ -433,6 +433,7 @@ mod c {
                 ("__subtf3", "subtf3.c"),
                 ("__divtf3", "divtf3.c"),
                 ("__powitf2", "powitf2.c"),
+                ("__letf2", "letf2.c"),
                 ("__fe_getround", "fp_mode.c"),
                 ("__fe_raise_inexact", "fp_mode.c"),
             ]);
