@@ -203,10 +203,10 @@ intrinsics! {
 
     // TODO(ahuszagh) Needs to be 128-bit
     #[aapcs_on_arm]
-    #[cfg(target_arch = "arm")]
     #[cfg(target_pointer_width = "64")]
-    pub extern "C" fn __adddt3(a: f64, b: f64) -> f64 {
-        add(a, b)
+    #[cfg(any(target_arch = "arm", target_arch = "mips"))]
+    pub extern "C" fn __addt3(a: Float128, b: Float128) -> Float128 {
+        a + b
     }
 
     #[cfg(target_arch = "arm")]
